@@ -6,59 +6,47 @@ error_reporting(E_ALL);
 
 class Teacher
 {
-    private int $teacherId;
-    private string $nameTeacher;
-    private string $emailTeacher;
-    private int $classId;
+    private int $id;
+    private string $name;
+    private string $email;
 
-    public function __construct(int $teacherId, string $nameTeacher, string $emailTeacher, int $classId)
+    public function __construct(int $id, string $name, string $email)
     {
-        $this->teacherId = $teacherId;
-        $this->nameTeacher = $nameTeacher;
-        $this->emailTeacher = $emailTeacher;
-        $this->classId = $classId;
+        $this->id = $id;
+        $this->name = $name;
+        $this->email = $email;
     }
 
-    public function getTeacherId(): int
+    public function getId(): int
     {
-        return $this->teacherId;
+        return $this->id;
     }
 
-    public function getNameTeacher(): string
+    public function getName(): string
     {
-        return $this->nameTeacher;
+        return $this->name;
     }
 
-    public function getEmailTeacher(): string
+    public function getEmail(): string
     {
-        return $this->emailTeacher;
-    }
-
-
-    public function getClassId(): int
-    {
-        return $this->classId;
-    }
-
-    public function setTeacherId(string $teacherId): void
-    {
-        $this->teacherId;
-    }
-
-    public function setNameTeacher(string $nameTeacher): void
-    {
-        $this->nameTeacher;
-    }
-
-    public function setEmailTeacher(string $emailTeacher): void
-    {
-        $this->emailTeacher;
+        return $this->email;
     }
 
 
-    public function setClassId(int $classId): void
+    public function setId(string $id): void
     {
-        $this->classId;
+        $this->id;
     }
+
+    public function setName(string $name): void
+    {
+        $this->name;
+    }
+
+    public function setEmail(string $email): void
+    {
+        $this->email;
+    }
+
 
 }

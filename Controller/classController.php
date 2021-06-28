@@ -1,10 +1,10 @@
 <?php
 declare(strict_types = 1);
 
-class HomepageController
+class classController
 {
     //render function with both $_GET and $_POST vars available if it would be needed.
-    public function render()
+    public function render(array $GET, array $POST)
     {
         //this is just example code, you can remove the line below
 
